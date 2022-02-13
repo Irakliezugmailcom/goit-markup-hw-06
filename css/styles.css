@@ -88,7 +88,7 @@ a {
     left: 0px;
     top: 0px;
     background: rgba(0, 0, 0, 0.2);
-    transition: transform 250ms var(--cubic);
+    transition: opacity 250ms var(--cubic);
 }
 
 .modal-background.is-hidden {
@@ -112,6 +112,7 @@ a {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     display: block;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .button-modal-close {
@@ -597,7 +598,7 @@ img {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
+    transition: fill 250ms var(--cubic), background-color 250ms var(--cubic);
 }
 
 .our-team-socials-link:focus .our-team-svg {
@@ -624,6 +625,7 @@ img {
     width: 20px;
     height: 20px;
     fill: #AFB1B8;
+    transition: fill 250ms --cubic;
 }
 
 .permanent-clients-title {
@@ -654,7 +656,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: color 250ms var(--cubic), 
+    transition: fill 250ms var(--cubic), 
         border-color 250ms var(--cubic);
 }
 
@@ -786,7 +788,7 @@ img {
     align-items: center;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
+    transition: fill 250ms var(--cubic), background-color 250ms var(--cubic);
 }
 
 .footer-right-text-link:focus .footer-right-text-svg {
@@ -930,7 +932,7 @@ img {
     letter-spacing: 0.03em;
     border-radius: 4px;
     color: #212121;
-    transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
+    transition: color 250ms var(--cubic), background-color 250ms var(--cubic) box-shadow 250ms var(--cubic);
 }
 
 .menu-item + .menu-item {
