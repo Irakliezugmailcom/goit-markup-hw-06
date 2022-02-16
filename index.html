@@ -49,14 +49,13 @@
             </ul>
             <div class="modal-background is-hidden" data-modal>
                 <div class="modal">
-                    <button class="button-modal-close" data-modal-close></button>
-                        <div class="button-close-cross">
-                            <img src="./images/close_cross.svg" alt="modal close cross">
-                        </div>
+                    <button class="button-modal-close" data-modal-close>
+                        <img class="button-close-cross" src="./images/close_cross.svg" alt="modal close cross">
+                    </button>
                     <form action="" class="modal-form">
                         <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
-                        <label for="" class="modal-label">
-                            <p class="modal-header-subtitle">Имя</p>
+                        <label class="modal-label">
+                            Имя
                             <span class="modal-span">
                                 <svg class="modal-svg">
                                     <use href="images/symbol-defs1.svg#icon-person"></use>
@@ -64,8 +63,8 @@
                                 <input class="modal-input" type="text" name="name" placeholder="Irakli Ezugbaia">
                             </span>
                         </label>
-                        <label for="" class="modal-label">
-                            <p class="modal-header-subtitle">Телефон</p>
+                        <label class="modal-label">
+                            Телефон
                             <span class="modal-span">
                                 <svg class="modal-svg">
                                     <use href="images/symbol-defs1.svg#icon-tel"></use>
@@ -73,8 +72,8 @@
                                 <input class="modal-input" type="tel" name="tel" placeholder="+380505555555">
                             </span>
                         </label>
-                        <label for="" class="modal-label">
-                            <p class="modal-header-subtitle">Почта</p>
+                        <label class="modal-label">
+                            Почта
                             <span class="modal-span">
                                 <svg class="modal-svg">
                                     <use href="images/symbol-defs1.svg#icon-mail"></use>
@@ -82,14 +81,15 @@
                             <input class="modal-input" type="email" name="email" placeholder="ie@gmail.com">
                             </span>
                         </label>
-                        <label for="" class="modal-label">
-                            <p class="modal-header-subtitle">Комментарий</p>
+                        <label class="modal-label4">
+                            Комментарий
                             <textarea class="modal-textarea" name="feedback" id="" cols="30" rows="10" placeholder="type your message here"></textarea>
                         </label>
-                        <label for="" class="modal-label">
+                        <label class="modal-label5">
                             <input class="modal-input-checkbox" type="checkbox" name="checkbox">
-                            <span class="modal-checkbox"></span>
-                            <p class="modal-confirmterms">Соглашаюсь с рассылкой и принимаю <a href="Условия договора">Условия договора</a></p>
+                                Соглашаюсь с рассылкой и принимаю 
+                            <span class="modal-input-checkbox-span"></span>
+                            <a class="modal-terms" href="Условия договора">Условия договора</a>
                         </label>
                         <button class="modal-button-submit" type="submit">Отправить</button>
                     </form>
@@ -434,10 +434,9 @@
             <form action="" class="footer-form">
                 <label for="" class="footer-label">
                     <p class="footer-label-text">Подпишитесь на рассылку</p> 
-                    <!-- <span class="footer-label-span"></span> -->
-                        <input class="footer-input" type="email" name="email" placeholder="Email">
-                        <!-- <img class="footer-label-pic" src="./images/email.svg" alt="email text pic"> -->
-                    <!-- </span> -->
+                    
+                    <input class="footer-input" type="email" name="email" placeholder="Email">
+                        
                 </label>
                 <button class="footer-button" type="submit"><span class="footer-button-text">Подписаться</span></button>
             </form>
