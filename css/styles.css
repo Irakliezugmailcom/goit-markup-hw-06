@@ -186,14 +186,13 @@ a {
     position: relative;
     display: block;
 }
-
-.modal-svg {
+    .modal-svg {
+    width: 13px;
+    height: 13px;
     position: absolute;
-    left: 0;
-    top: 0;
-    padding: 14px 15px;
-    width: 12px;
-    width: 12px;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
 }
 
 .modal-input {
