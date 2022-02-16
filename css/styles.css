@@ -186,13 +186,18 @@ a {
     position: relative;
     display: block;
 }
-    .modal-svg {
+
+.modal-svg {
     width: 13px;
     height: 13px;
     position: absolute;
     top: 50%;
     left: 5%;
     transform: translate(-50%, -50%);
+}
+
+.modal-span:hover .modal-svg {
+    fill: #2196F3;
 }
 
 .modal-input {
