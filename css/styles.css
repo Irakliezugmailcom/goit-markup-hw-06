@@ -175,6 +175,11 @@ a {
 
 .modal-label5 {
     margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: calc(24 / 14)
+    letter-spacing: 0.03em;
+    color: #757575;
 }
 
 .modal-header-subtitle {
@@ -245,17 +250,7 @@ a {
     color: var(--accent-color);
 }
 
-
-
-.modal-confirmterms {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-.nodal-terms {
+.modal-input-text {
     font-weight: normal;
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -277,6 +272,7 @@ a {
     width: 200px;
     height: 50px;
     cursor: pointer;
+    border: transparent;
 }
 
 .header-list {
@@ -913,9 +909,6 @@ img {
     font-weight: bold;
     font-size: 16px;
     line-height: calc(30 / 16)
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     padding: 10px 29px;
