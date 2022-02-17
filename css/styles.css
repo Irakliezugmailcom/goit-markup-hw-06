@@ -129,8 +129,8 @@ a {
     cursor: pointer;
 }
 
-. button-modal-close:hover .button-close-cross {
-    color: #2196F3;
+.button-modal-close:hover .button-close-cross {
+    fill: #2196F3;
 }
 
 .button-close-cross {
@@ -234,12 +234,18 @@ a {
     -webkit-appearance: none;
 }
 
-.modal-input-checkbox-span {
-    width: 11px;
-    height: 8px;
-    background-color: tomato;
+.modal-checkbox-svg {
+    width: 16px;
+    height: 15px;
     background-image: url(../images/2checkbox.svg);
+    cursor: pointer;
 }
+
+.modal-input-checkbox:hover .modal-checkbox-svg {
+    color: var(--accent-color);
+}
+
+
 
 .modal-confirmterms {
     font-weight: normal;

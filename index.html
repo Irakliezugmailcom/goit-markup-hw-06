@@ -50,7 +50,9 @@
             <div class="modal-background is-hidden" data-modal>
                 <div class="modal">
                     <button class="button-modal-close" data-modal-close>
-                        <img class="button-close-cross" src="./images/close_cross.svg" alt="modal close cross">
+                        <svg class="button-close-cross">
+                            <use href="images/symbol-defs1.svg#icon-cancel"></use>
+                        </svg>
                     </button>
                     <form action="" class="modal-form">
                         <h2 class="modal-header">Оставьте свои данные, мы вам перезвоним</h2>
@@ -86,9 +88,11 @@
                             <textarea class="modal-textarea" name="feedback" id="" cols="30" rows="10" placeholder="type your message here"></textarea>
                         </label>
                         <label class="modal-label5">
+                            <svg class="modal-checkbox-svg">
+                                <use href="images/symbol-defs.svg#icon-checkbox"></use>
+                            </svg>
                             <input class="modal-input-checkbox" type="checkbox" name="checkbox">
                                 Соглашаюсь с рассылкой и принимаю 
-                            <span class="modal-input-checkbox-span"></span>
                             <a class="modal-terms" href="Условия договора">Условия договора</a>
                         </label>
                         <button class="modal-button-submit" type="submit">Отправить</button>
