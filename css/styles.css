@@ -177,9 +177,15 @@ a {
     margin-bottom: 30px;
     font-weight: normal;
     font-size: 14px;
-    line-height: calc(24 / 14)
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: #757575;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-terms {
+    text-decoration: underline;
 }
 
 .modal-header-subtitle {
@@ -194,6 +200,7 @@ a {
 .modal-span {
     position: relative;
     display: block;
+    margin-top: 10px;
 }
 
 .modal-svg {
@@ -206,6 +213,10 @@ a {
 }
 
 .modal-span:hover .modal-svg {
+    fill: #2196F3;
+}
+
+.modal-span:focus .modal-svg {
     fill: #2196F3;
 }
 
@@ -233,29 +244,24 @@ a {
     box-sizing: border-box;
     border-radius: 4px;
     padding: 12px 16px;
+    resize: none;
 }
 
 .modal-input-checkbox {
     -webkit-appearance: none;
+
 }
 
 .modal-checkbox-svg {
+    position: absolute;
     width: 16px;
     height: 15px;
-    background-image: url(../images/2checkbox.svg);
     cursor: pointer;
+    background-image: url(../off.images/2checkbox.svg
 }
 
-.modal-input-checkbox:hover .modal-checkbox-svg {
-    color: var(--accent-color);
-}
-
-.modal-input-text {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: #757575;
+.modal-input-checkbox:checked .modal-checkbox-svg {
+    background-image: url(../on.images/2checkbox.svg);
 }
 
 .modal-button-submit {
@@ -855,6 +861,7 @@ img {
 .footer-form {
     display: flex;
     margin-left: auto;
+    align-items: flex-end;
 }
 
 .footer-label {
@@ -888,10 +895,9 @@ img {
 }
 
 .footer-button {
-    position: relative;
     display: flex;
-    margin-top: 35px;
     width: 200px;
+    align-items: center;justify-content: center;
     height: 50px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -902,29 +908,21 @@ img {
 }
 
 .footer-button-text {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    text-align: center;
     font-weight: bold;
     font-size: 16px;
     line-height: calc(30 / 16)
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    padding: 10px 29px;
+    /* padding: 10px 29px; */
 }
 
 .footer-label-svg {
-    position: absolute;
     top: 13px;
     right: 28px;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     fill: #FFFFFF;
-}
-
-.footer-label-link {
-    
+    margin-left: 10px;
 }
 
 .visually-hidden {
